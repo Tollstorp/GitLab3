@@ -2,7 +2,6 @@ import org.example.Calculator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -10,14 +9,11 @@ public class CalculatorTest {
 
     org.example.Calculator calculator;
 
-
     @BeforeEach // Initializes a new Calculator instance before each test
     public void beforeTests() {
         System.out.println("Setting up a new Calculator instance");
         calculator = new Calculator();
     }
-
-
 
     @Test
     @DisplayName("Calculate adding 4 to 1 is 5")
@@ -28,7 +24,6 @@ public class CalculatorTest {
         // test too se if I can run the Calculator from the BeforeEach command
         // so I can keep test code DRY (don't repeat yourself)
     }
-
 
     @Test
     @DisplayName("Calculate adding 5 to 3 is 8")
