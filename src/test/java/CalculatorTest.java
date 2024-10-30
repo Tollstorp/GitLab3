@@ -1,5 +1,4 @@
-package org.example;
-
+import org.example.Calculator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
@@ -48,6 +47,13 @@ public class CalculatorTest {
     }
 
     @Test
+    @DisplayName("Calculate 8 minus 4 is 4")
+    public void testEightMinusFourEqualFour(){
+        int result  = calculator.subtract(8,4);
+        assertEquals(4, result, "8-4 should result in 4");
+    }
+
+    @Test
     @DisplayName("Calculate 15 divided by 3 is 5")
     public void testDivide() {
         int result = (int) calculator.divide(15, 3);
@@ -91,18 +97,10 @@ public class CalculatorTest {
         assertNotEquals(6.0, result, "square root of 16 should not equal 6.0");
         //verifying not correct results won't pass, I messed up the assertion type at first...
     }
-/*        @Test
-        @DisplayName("8 -4 = 4")
-        public void testEightMinusFourEqualFour(){
-            Calculator calculator = new Calculator();
-            int actual = calculator.subtractTwonumbers(4,8);
-            assert
-        }*/
 
     @Test
     @DisplayName("Verify if 7 is odd")
     public void ifNumberIsOddThenTrue(){
-        Calculator calculator1 = new Calculator();
         assertTrue(calculator.isOdd(7));
         //case from class, learning the True assertion
 
