@@ -20,7 +20,7 @@ public class CalculatorTest {
     public void testAdd2() {
         /*        Calculator calculator = new Calculator();*/
         int result = calculator.add(4, 1);
-        assertEquals(6, result, "4 + 1 should equal 1");
+        assertEquals(5, result, "4 + 1 should equal 1");
         // test too se if I can run the Calculator from the BeforeEach command
         // so I can keep test code DRY (don't repeat yourself)
     }
