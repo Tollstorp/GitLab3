@@ -24,6 +24,7 @@ public class CalculatorTest {
         // test too se if I can run the Calculator from the BeforeEach command
         // so I can keep test code DRY (don't repeat yourself)
         //EDIT 11/11, this test passes now, should be ok for commit and push
+        //small change to be able to trigger workflow
     }
 
     @Test
