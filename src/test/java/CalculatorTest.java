@@ -26,6 +26,7 @@ public class CalculatorTest {
         //EDIT 11/11, this test passes now, should be ok for commit and push
         //small change
         //change
+        //change
     }
 
     @Test
