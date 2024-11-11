@@ -25,6 +25,7 @@ public class CalculatorTest {
         // so I can keep test code DRY (don't repeat yourself)
         //EDIT 11/11, this test passes now, should be ok for commit and push
         //small change
+        //change
     }
 
     @Test
